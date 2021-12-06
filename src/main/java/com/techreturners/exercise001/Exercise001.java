@@ -1,7 +1,7 @@
 package com.techreturners.exercise001;
 
 import java.util.List;
-//test
+//test new 1
 public class Exercise001 {
     public String capitalizeWord(String word) {
         // Add your code here
