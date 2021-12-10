@@ -5,7 +5,7 @@ import java.util.Locale;
 public class Exercise005 {
 
     public boolean isPangram(String input) {
-        String specialChars = "abcdefghijklmnopqrstuvwxyz";
+        String alphabetsChars = "abcdefghijklmnopqrstuvwxyz";
         input = input.toLowerCase(Locale.ROOT);
         
         if (input.isEmpty()) {
@@ -14,12 +14,12 @@ public class Exercise005 {
 
         for (int i = 0; i < input.length(); i++) {
 			String strChar = Character.toString(input.charAt(i));
-			if (specialChars.contains(strChar)) {
-                specialChars = specialChars.replace(strChar, "");
+			if (alphabetsChars.contains(strChar)) {
+                alphabetsChars = alphabetsChars.replace(strChar, "");
 			}
         }
 
-        if (specialChars.isEmpty()) {
+        if (alphabetsChars.isEmpty()) {
             return true;
         }
         else {
