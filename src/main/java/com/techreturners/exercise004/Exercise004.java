@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 
 public class Exercise004 {
     public LocalDateTime momentDateTime;
+    final int gigaSecond = 1000000000;
     
     public Exercise004(LocalDate date) {
         momentDateTime = date.atStartOfDay();
@@ -15,6 +16,6 @@ public class Exercise004 {
     }
 
     public LocalDateTime getDateTime() {
-        return momentDateTime.plusSeconds(1000000000);
+        return momentDateTime.plusSeconds(gigaSecond);
     }
 }
